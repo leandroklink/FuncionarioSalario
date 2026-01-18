@@ -24,7 +24,7 @@ a ordenação automática da lista.
 
 A ordenação é feita pelo salário, do maior para o menor:
 
-```java
+
 @Override
 public int compareTo(Funcionario outro){
     return Double.compare(outro.salario, this.salario);
