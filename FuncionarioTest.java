@@ -12,10 +12,14 @@ public class FuncionarioTest {
         
         Scanner input = new Scanner(System.in);
         ArrayList<Funcionario> arrayFuncionario = new ArrayList<>();
-        Collections.sort(arrayFuncionario);
+
         double soma = 0, media;
         
-        for(int i=1;i<=3;i++){
+        System.out.println("Digite a quantidade de funcionários:");
+        int qntd = input.nextInt();
+        input.nextLine();
+        
+        for(int i=1;i<qntd+1;i++){
             System.out.printf("Digite o nome do %d Funcionário: \n", i);
             String nome = input.nextLine();
             
@@ -28,6 +32,7 @@ public class FuncionarioTest {
             arrayFuncionario.add(funcionario); 
 
         }
+        Collections.sort(arrayFuncionario);
 
         System.out.println("====== Lista de Funcionários (ordenado por salário)======");
         for (Funcionario f : arrayFuncionario){ 
