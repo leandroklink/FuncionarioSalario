@@ -22,10 +22,4 @@ Projeto simples em Java para cadastro de funcionários, utilizando
 A classe `Funcionario` implementa a interface `Comparable` para permitir
 a ordenação automática da lista.
 
-A ordenação é feita pelo salário, do maior para o menor:
-
-
-@Override
-public int compareTo(Funcionario outro){
-    return Double.compare(outro.salario, this.salario);
-}
+A ordenação é feita pelo salário, do maior para o menor.
